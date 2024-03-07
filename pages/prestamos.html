@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/prestamos.css">
+    <title>SGBL</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="izquierda">
+            <nav class="lateral">
+                <h3 class="titulo">Biblioteca Online</h3>
+                <ul>
+                    <li>
+                        <a class="active" href="/pages/prestamos.html">Prestamo</a>
+                    </li>
+                    <li>
+                        <a href="/pages/dashboard.html">Biblioteca</a>
+                    </li>
+                    <li>
+                        <a href="#">Personas</a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Autores</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="derecha">
+
+            <nav class="barra">
+                <p>Usuario</p>
+                <i class="fa-regular fa-user"></i>
+            </nav>
+
+            <main class="general">
+                <section class="buscador">
+
+                    <div class="col1B colB">
+                        <label for="">Estado de Prestamo</label>
+                        <select name="" id="">
+                            <option value="">Entregado</option>
+                            <option value="">Proximos</option>
+                            <option value="">Tardio</option>
+                        </select>
+                    </div>
+
+                    <div class="col2B colB">
+                        <label for="">Lector</label>
+                        <input type="text" placeholder="Nombre del Lector">
+                    </div>
+
+                    <div class="col3B colB">
+                        <button>Buscar</button>
+                    </div>
+                </section>
+
+                <section class="info">
+
+                    <article class="controles row1">
+
+                        <h3>Registros</h3>
+
+                    <input type="text" placeholder="Buscar...">
+
+                    </article>   
+                    
+                    <table class="tabla row2">
+                        <thead>
+                            <th>Estado Prestamo</th>
+                            <th>Codigo Lector</th>
+                            <th>Nombre Lector</th>
+                            <th>Titulo Libro</th>
+                            <th>Fecha Devolucion</th>
+                            <th>Fecha Entrega</th>
+                            <th>Accion</th>
+                        </thead>
+                        <tbody id="tabla">
+                            <tr>
+                                <td>No disponible</td>
+                                <td>1554</td>
+                                <td>Benjamin sin B</td>
+                                <td>El Principito</td>
+                                <td>15/02/2024</td>
+                                <td>30/02/2024</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+        
+                    <article class="row3">
+                        <button>Siguiente</button>
+                        <button>Anterior</button>
+                    </article>
+
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/197155cccd.js" crossorigin="anonymous"></script>
+</body>
+</html>
